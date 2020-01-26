@@ -1,0 +1,39 @@
+/* mobile first device layout for navbar
+position fixed so that it is always at the top
+top: 0 and left: 0 for it to sit at the top 
+display: flex so that all the intems are aligned next to each other
+number is z-index needs to be lower than the one in backdrop*/
+
+.Toolbar {
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #703B09;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+/* how a nav item is displayed when inside of toolbar */
+
+.Toolbar nav {
+    height: 100%;
+}
+
+/* If you are amending css from othr source you need to name it the same  */
+.Logo {
+    height: 90%
+}
+
+/* max-width: 499px checking if we are on the movile devide */
+@media (max-width: 499px) {
+         .DesktopOnly {
+             display: none;
+         }
+
+}

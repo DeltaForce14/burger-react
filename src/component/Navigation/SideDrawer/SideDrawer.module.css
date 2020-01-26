@@ -1,0 +1,40 @@
+/* we need to make sidebar only visible on small screen devices. 
+position: fixed - it is always on the page even if we scroll
+max-width: 70% - it doesn't go over the edges on narrow devices */
+
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%; 
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: white;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+
+/* what should happen on big devides
+if width exceeds 500px than sidedrawer should not display*/ 
+@media (min-width: 500px) {
+    .SideDrawer {
+        display: none;
+    }
+}
+
+/* will open the sidedrawer into position identified above*/ 
+.Open {
+    transform: translateX(0);
+}
+
+/* this will shift it to the left*/ 
+.Close {
+    transform: translateX(-100%);
+}
+
+.Logo {
+    height: 15%;
+    margin-bottom: 32px;
+}
