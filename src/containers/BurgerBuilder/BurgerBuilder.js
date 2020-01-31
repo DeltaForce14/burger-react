@@ -27,6 +27,7 @@ class BurgerBuilder extends Component {
         purchased: false
     }
 
+    // goes to built controls
     purchaseHandler = () => {
         this.setState({purchased: true});
     }
@@ -57,7 +58,6 @@ class BurgerBuilder extends Component {
         this.setState({purchaseable: sum > 0});
     }
     
-
     // add ingredients   
     //it gets type from ingredients, type is each line
     //First we need to know an old count

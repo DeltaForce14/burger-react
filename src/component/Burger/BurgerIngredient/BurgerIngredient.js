@@ -8,9 +8,9 @@ class BurgerIngredient extends Component {
     let ingredient = null;
 
 
-    //break-top has seeds on it therefore the nested divs.
+    //bread-top has seeds on it therefore the nested divs.
     //default is set for ingredient to be empty 
-    // type will be received to this switch statement. 
+    // type is the 'bread-top' etc. It will be passed to Burger 
     switch (this.props.type) {
         case ('bread-bottom'):
             ingredient = <div className={classes.BreadBottom}></div>;
